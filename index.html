@@ -273,14 +273,14 @@
 
     <div class="mt-10 flex items-center justify-center gap-6 text-morandi-dark">
       <div class="text-right">
-        <p class="font-cormorant text-xl sm:text-2xl font-semibold">Jimmy Chen 志煒</p>
+        <p class="font-cormorant text-xl sm:text-2xl font-semibold">志煒 Jimmy Chen</p>
         <p class="text-xs text-morandi-muted tracking-widest mt-0.5">新郎 GROOM</p>
       </div>
       <div class="w-10 h-10 rounded-full bg-morandi-softbg border border-morandi-gold/30 flex items-center justify-center text-morandi-gold">
         <i class="fa-solid fa-rings-wedding text-sm fa-heart"></i>
       </div>
       <div class="text-left">
-        <p class="font-cormorant text-xl sm:text-2xl font-semibold">Lily Huang 芸秝</p>
+        <p class="font-cormorant text-xl sm:text-2xl font-semibold">芸秝 Lily Huang</p>
         <p class="text-xs text-morandi-muted tracking-widest mt-0.5">新娘 BRIDE</p>
       </div>
     </div>
@@ -358,7 +358,7 @@
 
           <!-- 加入行事曆按鈕 -->
           <div class="mt-7">
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Jimmy+Chen+%26+Lily+Huang+%E5%A9%9A%E7%A6%AE%E5%8D%88%E5%AE%B4&dates=20270306T033000Z/20270306T070000Z&details=%E4%B8%AD%E5%8D%88+11:30+%E5%85%A5%E5%B8%AD+%26+%E9%9B%9E%E5%B0%BE%E9%85%92%E5%90%A7+%2F+12:00+%E6%BA%96%E6%99%82%E9%96%8B%E5%B8%AD%EF%BD%9C%E5%9C%B0%E5%9D%80%EF%BC%9AiFG%E9%81%A0%E9%9B%84%E5%BB%A3%E5%A0%B4%E5%8F%B0%E4%B8%AD%E5%BA%97+%E8%87%BA%E4%B8%AD%E5%B8%82%E6%9D%B1%E5%8D%80%E6%96%B0%E5%BA%84%E9%87%8C%E5%BE%A9%E8%88%88%E8%B7%AF%E5%9B%9B%E6%AE%B5186%E8%99%9F+11F&location=%E5%A4%A9%E5%9C%93%E5%9C%B0%E6%96%B9%E5%A9%9A%E5%AE%B4%E6%9C%83%E9%A4%A8+%E8%BB%92%E6%99%AF%E5%BB%B3" 
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Jimmy+Chen+%26+Lily+Huang+%E5%A9%9A%E7%A6%AE%E5%8D%88%E5%AE%B4&dates=20270306T033000Z/20270306T070000Z&details=%E4%B8%AD%E5%8D%88+11:30+%E5%85%A5%E5%B8%AD+%26+%E9%9B%9E%E5%B0%BE%E9%85%92%E5%90%A7+%2F+12:00+%E6%BA%96%E6%99%82%E9%96%8B%E5%B8%AD%EF%BD%9C%E5%9C%B0%E5%BB%9A%EF%BC%9AiFG%E9%81%A0%E9%9B%84%E5%BB%A3%E5%A0%B4%E5%8F%B0%E4%B8%AD%E5%BA%97+%E8%87%BA%E4%B8%AD%E5%B8%82%E6%9D%B1%E5%8D%80%E6%96%B0%E5%BA%84%E9%87%8C%E5%BE%A9%E8%88%88%E8%B7%AF%E5%9B%9B%E6%AE%B5186%E8%99%9F+11F&location=%E5%A4%A9%E5%9C%93%E5%9C%B0%E6%96%B9%E5%A9%9A%E5%AE%B4%E6%9C%83%E9%A4%A8+%E8%BB%92%E6%99%AF%E5%BB%B3" 
                target="_blank" 
                rel="noopener noreferrer"
                class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-morandi-cream border border-morandi-gold/40 text-morandi-dark hover:bg-morandi-gold hover:text-white transition-all duration-300 text-xs sm:text-sm tracking-widest shadow-sm no-wrap">
@@ -375,7 +375,7 @@
           <button 
             type="button" 
             id="traffic-accordion-btn"
-            aria-expanded="false"
+            aria-expanded="true"
             class="w-full px-6 sm:px-10 py-5 flex items-center justify-between text-left hover:bg-morandi-softbg/60 transition-colors focus:outline-none">
             <div class="flex items-center gap-3">
               <div class="w-9 h-9 rounded-full bg-morandi-sage/15 text-morandi-sageDark flex items-center justify-center shrink-0">
@@ -391,13 +391,13 @@
               </div>
             </div>
             <div class="flex items-center gap-2 text-morandi-goldDark text-xs sm:text-sm font-medium no-wrap">
-              <span id="accordion-hint">點擊展開</span>
-              <i id="accordion-icon" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+              <span id="accordion-hint">點擊收合</span>
+              <i id="accordion-icon" class="fa-solid fa-chevron-down transition-transform duration-300" style="transform: rotate(180deg);"></i>
             </div>
           </button>
 
           <!-- 摺疊面板內容：純粹呈現場地方提供的交通圖 -->
-          <div id="traffic-accordion-panel" class="accordion-content px-5 sm:px-8">
+          <div id="traffic-accordion-panel" class="accordion-content open px-5 sm:px-8">
             <div class="pb-8 pt-2">
               <div class="relative rounded-2xl overflow-hidden bg-white p-2 sm:p-3 shadow-soft-glow border border-morandi-gold/20 group cursor-zoom-in"
                    onclick="openLightbox()">
@@ -530,15 +530,24 @@
               <span class="text-rose-500 ml-0.5">*</span>
             </label>
             <p class="text-xs text-morandi-sageDark mb-2">※ 含填表人本人及同行兒童</p>
-            <input 
-              type="number" 
-              id="field-total-guests" 
-              name="entry.1000005" 
-              min="1" 
-              max="20" 
-              placeholder="請輸入總人數（例如：2）"
-              class="w-full px-4 py-3 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-gold transition-all text-sm sm:text-base"
-            >
+            <div class="flex items-center gap-3">
+              <button type="button" onclick="adjustNumber('field-total-guests', -1, 1)" class="w-11 h-11 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark hover:bg-morandi-gold hover:text-white transition-colors flex items-center justify-center shadow-sm" aria-label="減少參加總人數">
+                <i class="fa-solid fa-minus text-xs"></i>
+              </button>
+              <input 
+                type="number" 
+                id="field-total-guests" 
+                name="entry.1000005" 
+                min="1" 
+                max="20" 
+                value="1"
+                class="w-24 text-center px-3 py-2.5 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark font-semibold focus:outline-none focus:border-morandi-gold text-base"
+              >
+              <button type="button" onclick="adjustNumber('field-total-guests', 1, 1)" class="w-11 h-11 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark hover:bg-morandi-gold hover:text-white transition-colors flex items-center justify-center shadow-sm" aria-label="增加參加總人數">
+                <i class="fa-solid fa-plus text-xs"></i>
+              </button>
+              <span class="text-xs text-morandi-muted">位</span>
+            </div>
           </div>
 
           <!-- Q6. 同行兒童人數 CHILDREN COUNT (預設 0，數字 > 0 才顯示第 7 題) -->
@@ -546,15 +555,24 @@
             <label for="field-children-count" class="block text-sm font-semibold text-morandi-dark tracking-wider mb-2">
               6. 同行兒童人數 <span class="font-cormorant text-xs tracking-widest text-morandi-gold uppercase ml-1">CHILDREN COUNT</span>
             </label>
-            <input 
-              type="number" 
-              id="field-children-count" 
-              name="entry.1000006" 
-              min="0" 
-              max="10" 
-              value="0"
-              class="w-full px-4 py-3 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark focus:outline-none focus:border-morandi-gold transition-all text-sm sm:text-base"
-            >
+            <div class="flex items-center gap-3">
+              <button type="button" onclick="adjustNumber('field-children-count', -1, 0)" class="w-11 h-11 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark hover:bg-morandi-gold hover:text-white transition-colors flex items-center justify-center shadow-sm" aria-label="減少同行兒童人數">
+                <i class="fa-solid fa-minus text-xs"></i>
+              </button>
+              <input 
+                type="number" 
+                id="field-children-count" 
+                name="entry.1000006" 
+                min="0" 
+                max="10" 
+                value="0"
+                class="w-24 text-center px-3 py-2.5 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark font-semibold focus:outline-none focus:border-morandi-gold text-base"
+              >
+              <button type="button" onclick="adjustNumber('field-children-count', 1, 0)" class="w-11 h-11 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark hover:bg-morandi-gold hover:text-white transition-colors flex items-center justify-center shadow-sm" aria-label="增加同行兒童人數">
+                <i class="fa-solid fa-plus text-xs"></i>
+              </button>
+              <span class="text-xs text-morandi-muted">位（無同行兒童請維持 0）</span>
+            </div>
           </div>
 
           <!-- Q7. 兒童座椅需求 HIGH CHAIR (僅在同行兒童人數 > 0 時顯示，預設為 0) -->
@@ -562,15 +580,24 @@
             <label for="field-highchair" class="block text-sm font-semibold text-morandi-dark tracking-wider mb-2">
               7. 兒童座椅需求 <span class="font-cormorant text-xs tracking-widest text-morandi-gold uppercase ml-1">HIGH CHAIR</span>
             </label>
-            <input 
-              type="number" 
-              id="field-highchair" 
-              name="entry.1000007" 
-              min="0" 
-              max="20" 
-              value="0"
-              class="w-full px-4 py-3 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark focus:outline-none focus:border-morandi-gold transition-all text-sm sm:text-base"
-            >
+            <div class="flex items-center gap-3">
+              <button type="button" onclick="adjustNumber('field-highchair', -1, 0)" class="w-11 h-11 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark hover:bg-morandi-gold hover:text-white transition-colors flex items-center justify-center shadow-sm" aria-label="減少兒童座椅數量">
+                <i class="fa-solid fa-minus text-xs"></i>
+              </button>
+              <input 
+                type="number" 
+                id="field-highchair" 
+                name="entry.1000007" 
+                min="0" 
+                max="20" 
+                value="0"
+                class="w-24 text-center px-3 py-2.5 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark font-semibold focus:outline-none focus:border-morandi-gold text-base"
+              >
+              <button type="button" onclick="adjustNumber('field-highchair', 1, 0)" class="w-11 h-11 rounded-xl bg-white border border-morandi-gold/30 text-morandi-dark hover:bg-morandi-gold hover:text-white transition-colors flex items-center justify-center shadow-sm" aria-label="增加兒童座椅數量">
+                <i class="fa-solid fa-plus text-xs"></i>
+              </button>
+              <span class="text-xs text-morandi-muted">張（無需求請維持 0）</span>
+            </div>
           </div>
 
           <!-- Q8. 素食套餐需求 VEGETARIAN MEALS (預設為 0，可調整數字) -->
@@ -894,13 +921,14 @@
     }
 
     /**
-     * 3. 數字增減輔助函式 (素食套餐需求)
+     * 3. 數字增減輔助函式 (第 5, 6, 7, 8 題共用)
      */
     function adjustNumber(inputId, delta, minVal) {
       const input = document.getElementById(inputId);
       const current = parseInt(input.value || '0', 10);
       const next = Math.max(minVal, current + delta);
       input.value = next;
+      input.dispatchEvent(new Event('input'));
     }
 
     /**
@@ -943,7 +971,7 @@
         totalGuestsInput.required = isAttending;
 
         if (!isAttending) {
-          totalGuestsInput.value = '';
+          totalGuestsInput.value = '1';
           childrenInput.value = '0';
           toggleSection(highchairGroup, false);
           highchairInput.value = '0';
@@ -1028,4 +1056,3 @@
   </script>
 </body>
 </html>
-```[cite: 1]
