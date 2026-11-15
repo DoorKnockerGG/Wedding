@@ -569,7 +569,7 @@
           <!-- Q7. 是否需要兒童座椅 HIGH CHAIR (僅在同行兒童人數 > 0 時顯示，預設為 0 的數字欄位) -->
           <div id="highchair-group" class="dynamic-section dynamic-hidden">
             <label for="field-highchair" class="block text-sm font-semibold text-morandi-dark tracking-wider mb-2">
-              7. 需要兒童座椅數量 <span class="font-cormorant text-xs tracking-widest text-morandi-gold uppercase ml-1">HIGH CHAIR</span>
+              7. 是否需要兒童座椅 <span class="font-cormorant text-xs tracking-widest text-morandi-gold uppercase ml-1">HIGH CHAIR</span>
               <span class="text-rose-500 ml-0.5">*</span>
             </label>
             <div class="flex items-center gap-3">
@@ -945,7 +945,7 @@
         }
       });
 
-      // 規則 B：同行兒童人數 > 0 才顯示第 7 題兒童座椅數量輸入
+      // 規則 B：同行兒童人數 > 0 才顯示第 7 題兒童座椅
       function handleChildrenChange() {
         const count = parseInt(childrenInput.value || '0', 10);
         const needChair = count > 0;
